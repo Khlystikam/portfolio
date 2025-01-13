@@ -1,0 +1,91 @@
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .search-main {
+        flex: 0 0 45%;
+    }
+
+    .main-banners {
+        height: auto;
+    }
+
+    .banners-main {
+        height: 280px;
+    }
+
+    .banner-box-text {
+        justify-content: space-between;
+    }
+
+    .banner-text-name {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .banner-text-description {
+        font-size: 14px;
+        line-height: 120%;
+        margin-top: -20px;
+    }
+
+    .banner-box-img {
+        position: absolute;
+        z-index: -1;
+        left: 25%;
+        top: 5%;
+        width: 70%;
+    }
+
+    .main-pick-up {
+        margin: 25px auto;
+    }
+
+    .car-card {
+        justify-content: flex-start;
+    }
+
+    .img-cars-box {
+        height: auto;
+    }
+
+    .spesification {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .icon-text {
+        width: 50%;
+    }
+
+    .icon-text img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .price-button-rent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .price-box {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .button-rent {
+        width: 80%;
+    }
+
+    .about-box {
+        width: 50%;
+    }
+
+}

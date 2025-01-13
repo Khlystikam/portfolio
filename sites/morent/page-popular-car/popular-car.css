@@ -1,0 +1,61 @@
+.popular-container-cars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.popular-cars-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.popular-cars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 87%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.popular-cars h2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #90A3BF;
+}
+
+.popular-cars button {
+    width: 80px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3563E9;
+    padding: 5px;
+}
+
+.popular-cars button:hover {
+    color: #fff;
+    background: #5e82ec;
+    box-shadow: 0px 4px 10px rgba(53, 99, 233, 0.5);
+}
+
+.popular-cars button:active {
+    background: #3b56a8;
+}
+
+.item-cars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 30px;
+}

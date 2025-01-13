@@ -1,0 +1,129 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    color: #000;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 80px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.about-box ul, .about-box li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 50%;
+    height: auto;
+}
+
+.logo-footer {
+    font-size: 32px;
+    color: #3563E9;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.footer-logo p {
+    width: 300px;
+    font-size: 16px;
+    color: #5e5e5e;
+    font-weight: 300;
+}
+
+.about-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 40%;
+    height: 100%;
+}
+
+.about-box div {
+    width: 150px;
+}
+
+.about-box p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+}
+
+.about-box ul li {
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.about-box a {
+    text-decoration: none;
+}
+
+.about-box a:hover {
+    font-weight: 500;
+}
+
+.footer-info-links {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-info-links-morent {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-info-links-morent p {
+    width: 100%;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}
+
+.footer-info-links-privacy {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+}
+
+.footer-info-links-privacy p {
+    width: 150px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+}

@@ -1,0 +1,129 @@
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Add your CSS properties here */
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .nav-bar-top {
+        height: 100px;
+    }
+
+    .nav-bar-top a {
+        font-size: 26px;
+    }
+
+    .search-main {
+        flex: 0 0 35%;
+    }
+
+    .profil-notification {
+        justify-content: center;
+    }
+
+    .main-banners {
+        height: auto;
+        margin: 30px auto;
+        margin-bottom: 20px;
+    }
+
+    .banners-main {
+        height: 280px;
+    }
+
+    .banner-box-text {
+        justify-content: space-between;
+    }
+
+    .banner-text-name {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 100%;
+    }
+
+    .banner-text-description {
+        font-size: 14px;
+        line-height: 120%;
+        margin-top: -20px;
+    }
+
+    .banner-box-img {
+        position: absolute;
+        z-index: -1;
+        left: 12%;
+        top: 5%;
+    }
+
+    .main-pick-up p, .main-pick-up label, .main-pick-up select, .main-pick-up option {
+        font-size: 14px;
+    }
+
+    .car-card {
+        justify-content: flex-start;
+    }
+
+    .img-cars-box {
+        height: auto;
+    }
+
+    .spesification {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .icon-text {
+        width: 50%;
+    }
+
+    .icon-text img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .price-button-rent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .price-box {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .price {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .button-rent {
+        width: 80%;
+    }
+
+    .footer-logo a {
+        font-size: 26px;
+    }
+
+    .footer-logo p {
+        font-size: 14px;
+    }
+
+    .about-box p {
+        font-size: 16px;
+    }
+
+    .about-box li {
+        font-size: 14px;
+    }
+
+    .footer-info-links p {
+        font-size: 14px;
+    }
+}
