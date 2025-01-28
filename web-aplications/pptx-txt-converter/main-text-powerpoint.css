@@ -91,3 +91,22 @@
     font-size: 14px;
     color: #888;
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error-text {
+    color: red;
+    font-weight: bold;
+}
+
+.dropzone-container-name-file {
+    list-style-type: none;
+}
+
+.main-text-powerpoint-button:disabled {
+    background-color: #ccc;
+}

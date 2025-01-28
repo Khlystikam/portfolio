@@ -1,6 +1,4 @@
 <?php
-// Предварительно нужно установить библиотеку для php PhpPresentation
-
 require 'vendor/autoload.php'; // Подключение Composer Autoloader
 use PhpOffice\PhpPresentation\IOFactory;
 
@@ -9,16 +7,48 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 
+header('Content-Type: application/json; charset=utf-8');
+
 // Если это preflight запрос (OPTIONS), сразу возвращаем статус 200
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     http_response_code(200);
     exit();
 }
 
+
 // Папки для загрузки и сохранения файлов
-$uploadDirectory = "uploads/";
-$outputDir = "output/";
-$zipFile = "/var/www/html/php/pptx-txt/text_files.zip"; // Абсолютный путь к архиву (поменяйте на свой, если нужно)
+$uploadDirectory = "/var/www/html/php/pptx-txt/uploads/";
+$outputDir = "/var/www/html/php/pptx-txt/output/";
+$zipFile = "/var/www/html/php/pptx-txt/text_files.zip"; // Абсолютный путь к архиву
+
+
+function convertPptToPptx($pptFilePath, $outputDir) {
+    $pptxFilePath = $outputDir . pathinfo($pptFilePath, PATHINFO_FILENAME) . '.pptx';
+
+    // Проверяем наличие LibreOffice
+    $command = "libreoffice --version";
+    $result = shell_exec($command);
+    if (!$result) {
+        throw new Exception('LibreOffice не установлен.');
+    }
+
+    // Выполняем конвертацию
+    $command = "libreoffice --headless --convert-to pptx --outdir " . escapeshellarg($outputDir) . " " . escapeshellarg($pptFilePath);
+    $output = shell_exec($command);
+
+    // Логирование
+    error_log("Команда: $command");
+    error_log("Вывод LibreOffice: $output");
+
+    // Проверяем успешность конвертации
+    if (!file_exists($pptxFilePath)) {
+        error_log("Файл $pptxFilePath не был создан.");
+        throw new Exception("Не удалось конвертировать $pptFilePath в PPTX.");
+    }
+
+    return $pptxFilePath;
+}
+
 
 // Создаем папки, если они не существуют
 if (!is_dir($uploadDirectory)) {
@@ -29,8 +59,8 @@ if (!is_dir($outputDir)) {
 }
 
 // Проверяем, были ли файлы отправлены
-if (isset($_FILES['pptx_files'])) {
-    $files = $_FILES['pptx_files']; // Получаем массив с файлами
+if (isset($_FILES['files'])) {
+    $files = $_FILES['files']; // Получаем массив с файлами
 
     // Удаляем старый архив, если он существует
     if (file_exists($zipFile)) {
@@ -50,6 +80,31 @@ if (isset($_FILES['pptx_files'])) {
         if ($files['error'][$key] === UPLOAD_ERR_OK) {
             $tmpName = $files['tmp_name'][$key]; // Временный файл
 
+            // Определяем расширение файла
+            $fileExtension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+
+            // Если файл в формате .ppt, конвертируем его в .pptx
+            if ($fileExtension === 'ppt') {
+                try {
+                    // Указываем папку для сохранения конвертированного файла
+                    $convertedFilePath = convertPptToPptx($tmpName, $uploadDirectory); // Функция для конвертации
+                    
+                    // Проверяем, создался ли конвертированный файл
+                    if (!file_exists($convertedFilePath)) {
+                        throw new Exception("Конвертированный файл $convertedFilePath не найден.");
+                    }
+
+                    // Обновляем временный путь файла на конвертированный файл
+                    $tmpName = $convertedFilePath;
+                    $fileName = basename($convertedFilePath);
+                    error_log("Файл $fileName успешно конвертирован в .pptx.");
+                } catch (Exception $e) {
+                    error_log("Ошибка конвертации файла $fileName: " . $e->getMessage());
+                    echo json_encode(['error' => "Ошибка конвертации файла $fileName: " . $e->getMessage()]);
+                    exit();
+                }
+            }
+
             // Генерируем имя для текстового файла
             $txtFileName = pathinfo($fileName, PATHINFO_FILENAME) . ".txt";
             $txtFilePath = $outputDir . $txtFileName;
@@ -68,10 +123,15 @@ if (isset($_FILES['pptx_files'])) {
                         try {
                             // Проверяем, является ли shape текстовым
                             if ($shape instanceof \PhpOffice\PhpPresentation\Shape\RichText) {
-                                $slideText .= $shape->getPlainText() . PHP_EOL;
+                                $plainText = $shape->getPlainText();
+                                // Фильтруем пустые или некорректные текстовые данные
+                                if (!empty($plainText)) {
+                                    $slideText .= $plainText . PHP_EOL;
+                                }
                             }
                         } catch (\Exception $e) {
-                            // Игнорируем ошибки обработки отдельных элементов
+                            // Логируем ошибку, но продолжаем обработку
+                            error_log("Ошибка при обработке слайда: " . $e->getMessage());
                             continue;
                         }
                     }
@@ -101,7 +161,7 @@ if (isset($_FILES['pptx_files'])) {
     deleteFilesInDirectory($outputDir);
 
     // Возвращаем ссылку на архив
-    echo json_encode(['downloadUrl' => "Ваш хостинг/php/pptx-txt/text_files.zip"]);
+    echo json_encode(['downloadUrl' => "https://dev-magick-api.ru/php/pptx-txt/text_files.zip"]);
 } else {
     echo json_encode(['error' => 'Файлы не были загружены.']);
 }
