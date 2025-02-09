@@ -1,0 +1,48 @@
+.time-range-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    max-height: 10%;
+    min-height: 50px;
+    font-size: 11px;
+    color: #546076;
+    padding: 20px 0;
+    margin-bottom: 60px;
+}
+
+.time-range-text {
+    width: 20%;
+}
+
+.time-range-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    gap: 5px;
+}
+
+.time-range-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50%;
+    padding: 5px;
+    margin: 0;
+    border-radius: 15px;
+    border: solid 1px #263144;
+
+}
+
+.time-range-item.active {
+    color: #fff;
+    font-weight: 500;
+    border: solid 1px #fff;
+}

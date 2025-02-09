@@ -1,0 +1,106 @@
+.bots-matrix-trading-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(3 * (31% - 2px));
+    height: 100%;
+    max-height: 35%;
+    margin: 0 auto;
+    gap: 2px;
+}
+
+.lime-img-box {
+    position: absolute;
+    z-index: 5; 
+    top: 20px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.line-img {
+    width: 50%;
+    height: auto;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.bots-matrix-trading {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 calc(33.33% - 2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(33.33% - 2px);
+    height: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #252d40;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 5px;
+}
+
+.bots-matrix-trading.active {
+    background: radial-gradient(rgb(22, 25, 34), rgb(48, 65, 95));
+}
+
+.bots-matrix-trading-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    max-width: 0 auto;
+    margin: 0 auto;
+}
+
+.bots-matrix-trading-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bots-matrix-trading-result-plus {
+    color: #78a659;
+}
+
+.bots-matrix-trading-result-minus {
+    color: #d2447b;
+}
+
+.bots-matrix-trading-name p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.bots-matrix-trading-name_no_active {
+    color: #515d73;
+}
+
+.bots-matrix-trading-result_no_active {
+    display: none;
+}
