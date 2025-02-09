@@ -1,28 +1,28 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import {
-    Chart as ChartJS,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
-    Filler,
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler,
 } from 'chart.js';
+import './test.css';
 
-import './MarketSchedule.css';
-
+// Регистрируем необходимые компоненты Chart.js
 ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    LineElement,
-    Title,
-    Tooltip,
-    Legend,
-    Filler
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
 );
 
 const MarketInformation = ({ indexSwitch, data, activeBot, timeLineCostData, timeLineCost, source }) => {
@@ -49,28 +49,16 @@ const MarketInformation = ({ indexSwitch, data, activeBot, timeLineCostData, tim
         return <div>Нет данных</div>;
     }
 
-    // Создаем градиент для заливки
-    const gradientFill = (context) => {
-        const chart = context.chart;
-        const { ctx, chartArea } = chart;
-        if (!chartArea) return null;
-
-        const gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-        gradient.addColorStop(0, 'rgba(34, 120, 212, 0)'); // Начальный цвет градиента
-        gradient.addColorStop(1, 'rgb(44, 128, 218, 0.6)'); // Конечный цвет градиента
-        return gradient;
-    };
-
     const chartData = {
         labels: selectedTimeLine.timeSegment,
         datasets: [
             {
                 label: 'Time Cost',
                 data: timeCostArray,
-                borderColor: '#2278d4', // Цвет линии графика
-                backgroundColor: gradientFill, // Градиент для заливки
-                fill: true, // Включаем заливку
-                tension: 0.5, // Сглаживание линии
+                borderColor: '#2278d4',
+                backgroundColor: 'rgba(34, 120, 212, 0.2)',
+                fill: true,
+                tension: 0.4,
                 pointBackgroundColor: timeCostArray.map((_, index) => 
                     index === activeBot ? '#9cc4ef' : 'transparent'
                 ),
@@ -80,7 +68,6 @@ const MarketInformation = ({ indexSwitch, data, activeBot, timeLineCostData, tim
                 pointRadius: timeCostArray.map((_, index) => 
                     index === activeBot ? 4 : 0
                 ),
-                pointBorderWidth: 0,
             },
         ],
     };
@@ -94,7 +81,7 @@ const MarketInformation = ({ indexSwitch, data, activeBot, timeLineCostData, tim
             tooltip: {
                 enabled: true,
                 backgroundColor: '#222',
-                bodyColor: 'rgba(255, 255, 255, 0.0)',
+                bodyColor: '#fff',
                 borderColor: 'rgba(255, 255, 255, 0.1)',
                 borderWidth: 1,
                 displayColors: false,
@@ -102,26 +89,10 @@ const MarketInformation = ({ indexSwitch, data, activeBot, timeLineCostData, tim
         },
         scales: {
             x: {
-                display: true, // Показываем ось X
-                grid: {
-                    display: true, // Включаем сетку для оси X
-                    color: 'rgba(255, 255, 255, 0.05)', // Цвет сетки (очень светлый)
-                    borderDash: [5, 5], // Пунктирная линия
-                },
-                ticks: {
-                    display: false, // Цвет текста меток оси X
-                },
+                display: false,
             },
             y: {
-                display: true, // Показываем ось Y
-                grid: {
-                    display: true, // Включаем сетку для оси Y
-                    color: 'rgba(255, 255, 255, 0.05)', // Цвет сетки (очень светлый)
-                    borderDash: [5, 5], // Пунктирная линия
-                },
-                ticks: {
-                    display: false, // Цвет текста меток оси Y
-                },
+                display: false,
             },
         },
     };

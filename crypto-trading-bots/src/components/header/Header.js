@@ -1,5 +1,5 @@
-import "./Header.css";
 import { useState } from "react";
+import "./Header.css";
 
 const HeaderMain = () => {
     const [burgerImgIcon, setBurgerImgIcon] = useState("/assets/img/burger-menu/burger-menu-close.webp");

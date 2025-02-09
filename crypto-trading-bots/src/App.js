@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import './App.css';
 import HeaderMain from './components/header/Header';
 import MarketInformation from './components/market-schedule/MarketSchedule';
 import BotsMatrixTrading from './components/bots/BotsMatrixTrading';
 import TimeRange from './components/time-range/TimeRange';
 import FooterMain from './components/footer/Footer';
+import './App.css';
+
 
 function App() {
     const [data, setData] = useState(null);
@@ -66,6 +67,7 @@ function App() {
 
     return (
         <div className="app">
+            <img src="/assets/img/gradient-main/gradient-up.webp" alt="gradient" className="gradient-up" />
             <HeaderMain />
             <MarketInformation 
                 indexSwitch={activeTime} 
