@@ -1,5 +1,0 @@
-Это компонент реакции и php-скрипт для получения текста из файлов презентаций pptx. Файлы сохраняются в txt-файл и загружаются клиентом в zip-архив.
-
-____________________________________________________________________________________________________________________________________________________
-
-This is a react component and php script to get text from pptx presentation files. Files are saved in a txt file and downloaded by the client into a zip archive.

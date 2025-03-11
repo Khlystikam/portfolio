@@ -1,0 +1,162 @@
+.cars-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+}
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 390px;
+    background: #fff;
+    padding: 22px;
+    gap: 33px;
+}
+
+.car-name-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    height: 50px;
+}
+
+.name-car {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000
+}
+
+.category-car {
+    font-size: 14px;
+    font-weight: 300;
+    color: #90A3BF
+}
+
+.img-cars-box {
+    width: 100%;
+    height: 100px;
+}
+
+.img-car {
+    width: 100%;
+}
+
+.spesification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    gap: 5px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.name-icon {
+    font-size: 15px;
+    font-weight: 300;
+    color: #90A3BF;
+}
+
+.price-button-rent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+}
+
+.price {
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.text-time {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 300;
+    color: #90A3BF;
+}
+
+.button-rent {
+    width: 50%;
+    height: 100%;
+    background: #3563E9;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-rent:hover {
+    background: #5e82ec;
+}
+
+.button-rent:active {
+    background: #3b56a8;
+}
+
+.show-more-car {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+}
+
+.show-more-car-button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background: #3563E9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.show-more-car-button:hover {
+    color: #fff;
+    background: #5e82ec;
+    box-shadow: 0px 4px 10px rgba(53, 99, 233, 0.5);
+}
+
+.show-more-car-button:active {
+    background: #2b4694;
+}

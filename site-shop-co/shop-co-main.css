@@ -1,0 +1,14 @@
+.main-container__site-shop-co {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    font-family: "Teachers", serif;
+    font-weight: normal;
+    color: #000;
+    margin:  0 auto;
+    background: #fff;
+}
