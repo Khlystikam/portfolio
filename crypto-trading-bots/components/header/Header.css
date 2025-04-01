@@ -1,0 +1,146 @@
+.header-main__target-bots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    gap: 20px;
+}
+
+.header-container-open {
+    justify-content: flex-start;
+    background: #1d2637;
+}
+
+.burger-menu-contener,
+.name-menu-open,
+.refresh-page-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+}
+
+.name-menu-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #546076;
+}
+
+.menu-list-close {
+    display: none;
+}
+
+.menu-list-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    position: fixed;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+    background: #1d2637;
+    padding: 20px;
+    gap: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 25%;
+    height: 100%;
+}
+
+.nav-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    gap: 50px;
+    list-style: none;
+    background: #1d2637;
+}
+
+button {
+    background: none;
+    border: none; 
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.burger-icon {
+    width: 20px;
+    height: auto;
+}
+
+.menu-list-item {
+    width: 50%;
+    font-size: 16px;
+    color: #b1c1df;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 8px;
+    background: #3d55819d;
+    box-shadow: 0 0 3px 0px #9ecbff;
+}
+
+.menu-list-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.name-menu-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.name-menu-close {
+    display: none;
+}
+
+.refresh-page-close {
+    display: none;
+}
+
+.refresh-page-btn {
+    width: auto;
+}
+
+.refresh-page-icon {
+    width: 20px;
+    height: auto;
+}
