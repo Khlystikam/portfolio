@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.reviewGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.reviewItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.reviewContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 80%;
+    gap: 10px;
+}
+
+.prevButton, .nextButton {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 50px;
+    top: -100px;
+    cursor: pointer;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.nameVerification {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+    gap: 10px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0000009c;
+}

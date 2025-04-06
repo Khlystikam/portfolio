@@ -50,7 +50,7 @@ const TopSelling: React.FC = () => {
                                 <p>{ item.name }</p>
                             </div>
                             <div className="top-selling__items_stars">
-                                <StarRating rating={ item.stars } />
+                                <StarRating rating={ item.stars } fontSaze='25px' />
                                 <p>{ item.stars }/5</p>
                             </div>
                             <div className="top-selling__items_price">

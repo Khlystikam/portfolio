@@ -4,6 +4,8 @@ import BrendsBlock from './components/pages/main/partners/BrendsBlock';
 import NewArrivals from './components/pages/main/new-arrivals/NewArrivals';
 import TopSelling from './components/pages/main/top-selling/TopSelling';
 import StyleDress from './components/pages/main/style-dress/StyleDress';
+import CustomerReviews from './components/pages/main/customer-reviews/CustomerReviews';
+import FormSubscribeBottom from './components/pages/main/form-subscribe-bottom/FormSubscribeBottom';
 
 import './ShopCoMain.css';
 // import './media-query-css/laptop-max-1024.css';
@@ -32,6 +34,8 @@ const MainShopCoContainer = () => {
             <NewArrivals />
             <TopSelling />
             <StyleDress />
+            <CustomerReviews />
+            <FormSubscribeBottom />
 
         </div>
     );
