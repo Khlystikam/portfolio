@@ -1,9 +1,11 @@
 .formSubscribeBottom__content {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     height: 200px;
     margin: 80px 0;
 }
@@ -54,12 +56,13 @@
 }
 
 .formSubscribe__input {
-    width: 100%;
-    height: 48px;
+    width: 95%;
+    height: 32px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+    padding: 10px;
     background: #FFFFFF;
 }
 

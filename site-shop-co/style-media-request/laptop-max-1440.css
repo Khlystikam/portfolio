@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1440px) {
+    .main-container__site-shop-co {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
+    ._container_1acb1_1 {
+        width: 90%;
+    }
+}

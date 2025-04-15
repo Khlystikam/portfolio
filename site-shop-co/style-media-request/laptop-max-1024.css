@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1024px) {
+    .header__nav__shop-co {
+        font-size: 0.9rem;
+    }
+    
+    .header__search__shop-co {
+        width: 30%;
+    }
+    
+    .main-site {
+        height: 565px;
+    }
+    
+    .main-first-block h1 {
+        font-size: 1.5rem;
+    }
+    
+    .first-block-description {
+        font-size: 0.9rem;
+    }
+    
+    .btn-main-first-block {
+        width: 150px;
+        height: 45px;
+        border-radius: 30px;
+    }
+    
+    .statistics-number {
+        font-size: 1.6rem;
+    }
+    
+    .statistics-name {
+        font-size: 0.8rem;
+    }
+    
+    .brends-block-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .brends-block-item-img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .new-arrivals--h2 {
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    
+    .new-arrivals__items-container {
+        margin-bottom: 50px;
+    }
+    
+    .new-arrivals__item {
+        width: 200px;
+        height: 350px;
+    }
+    
+    .new-arrivals__items_name {
+        font-size: 0.8rem;
+    }
+    
+    .new-arrivals__items_price {
+        font-size: 1rem;
+    }
+    
+    .items_price-sale p {
+        font-size: 1rem;
+    }
+    
+    .top-selling--h2 {
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    
+    .top-selling__container {
+        margin-bottom: 50px;
+    }
+    
+    .top-selling__items-container {
+        margin-bottom: 50px;
+    }
+    
+    .top-selling__item {
+        width: 200px;
+        height: 350px;
+    }
+    
+    .top-selling__items_name {
+        font-size: 0.8rem;
+    }
+    
+    .top-selling__items_price {
+        font-size: 1rem;
+    }
+    
+    .top-selling__items_price-sale p {
+        font-size: 1rem;
+    }
+    
+    ._container_4x5oj_1 {
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+    
+    ._dress__item_4x5oj_45 {
+        margin: 0 auto;
+    }
+    
+    ._h3_4x5oj_25 {
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    
+    ._dress__item__one_line_4x5oj_85 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+    }
+    
+    ._h3_1acb1_21 {
+        font-size: 2rem;
+        margin: 30px 0;
+    }
+    
+    ._prevButton_cvxr7_99, ._nextButton_cvxr7_99 {
+        top: -70px;
+    }
+    
+    ._stars_z1zly_1 {
+        font-size: 20px;
+    }
+    
+    ._name_cvxr7_125 {
+        font-size: 1rem;
+    }
+    
+    ._description_cvxr7_157 {
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    
+    ._formSubscribe__text_eavqj_45 {
+        width: 45%;
+    }
+    
+    ._formSubscribe__text_p_eavqj_63{
+        font-size: 2rem;
+    }
+}
+

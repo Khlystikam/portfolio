@@ -6,11 +6,14 @@ import TopSelling from './components/pages/main/top-selling/TopSelling';
 import StyleDress from './components/pages/main/style-dress/StyleDress';
 import CustomerReviews from './components/pages/main/customer-reviews/CustomerReviews';
 import FormSubscribeBottom from './components/pages/main/form-subscribe-bottom/FormSubscribeBottom';
+import FooterPage from './components/pages/main/footer/FooterPage';
 
 import './ShopCoMain.css';
-// import './media-query-css/laptop-max-1024.css';
-// import './media-query-css/laptop-max-1440.css';
-// import './media-query-css/mobile.css';
+
+import './style-media-request/laptop-max-1440.css';
+import './style-media-request/laptop-max-1024.css';
+import './style-media-request/laptop-max-768.css';
+import './style-media-request/laptop-max-425.css';
 
 
 const MainShopCoContainer = () => {
@@ -36,6 +39,7 @@ const MainShopCoContainer = () => {
             <StyleDress />
             <CustomerReviews />
             <FormSubscribeBottom />
+            <FooterPage />
 
         </div>
     );
