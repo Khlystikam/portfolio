@@ -1,0 +1,136 @@
+.advantages-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 100%;
+    font-size: 20px;
+    color: var(--color-grey);
+    text-align: center;
+    border-radius: 20px;
+    background: var(--color-white);
+}
+
+.advantages-block-2__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 900px;
+    margin-bottom: 120px;
+}
+
+.advantages-title-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.advantages-title-block h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.advantages-title--h2-1 {
+    color: var(--color-black)
+}
+
+.advantages-title--h2-2 {
+    color: var(--color-orange-juice);
+}
+
+.advantages__matrix-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.advantages__matrix-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350px;
+    border-radius: 30px;
+    background: var(--color-light-grey);
+}
+
+.advantages__matrix-item--text {
+    width: 55%;
+    padding-left: 50px;
+}
+
+.advantages__matrix-item__text--title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.matrix-item__text__title--h3 {
+    width: 100%;
+    font-size: 32px;
+    color: var(--color-dark-grey);
+    font-weight: normal;
+}
+
+.matrix-item__text__title-img-box {
+    width: 50px;
+    height: 50px;
+}
+
+.matrix-item__text__title--img {
+    width: 100%;
+    height: auto;
+}
+
+.advantages__matrix-item__text {
+    width: 100%;
+    height: auto;
+}
+
+.matrix-item__text--p {
+    width: 100%;
+    font-size: 24px;
+    color: var(--color-grey);
+    font-weight: 400;
+}
+
+.advantages__matrix-item-img-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+}
+
+.advantages__matrix-item-img {
+    width: 300px;
+    height: auto;
+}
+
+.matrix-item__img {
+    width: 100%;
+    height: auto;
+}
