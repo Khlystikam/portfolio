@@ -1,4 +1,4 @@
-.header__box {
+.section-header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@
     background: var(--color-dark-grey);
 }
 
-.logo-box {
+.header__logo {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -29,12 +29,12 @@
     height: 100%;
 }
 
-.logo-img {
-    width: 70%;
+.header__logo-img {
+    width: 100%;
     height: auto;
 }
 
-.nav-box {
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -43,7 +43,7 @@
     height: 100%;
 }
 
-.nav__ui--box {
+.nav__ui {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -52,19 +52,19 @@
     margin-left: 100px;
 }
 
-.nav__a--item {
+.nav__link {
     font-size: 24px;
     color: var(--color-white);
     font-weight: 300;
     transition: 0.5s;
 }
 
-.nav__a--item:hover {
+.nav__link:hover {
     color: var(--color-grey-2);
     transition: 0.5s;
 }
 
-.communication-box {
+.communication {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,12 +74,12 @@
     gap: 20px;
 }
 
-.communication__a__item--img {
+.communication__link_img {
     width: 40px;
     height: auto;
 }
 
-.communication__a__item--tel {
+.communication__link_tel {
     font-size: 32px;
     font-weight: 300;
     letter-spacing: 3px;
