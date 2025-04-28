@@ -55,6 +55,14 @@ const FooterPage: React.FC = () => {
         },
     ];
 
+    const paymentMethods = [
+        '/assets/dev-site/shop-co/footer/visa.png',
+        '/assets/dev-site/shop-co/footer/mc.png',
+        '/assets/dev-site/shop-co/footer/pp.png',
+        '/assets/dev-site/shop-co/footer/iplay.png',
+        '/assets/dev-site/shop-co/footer/gplay.png',
+    ];
+
     return (
         <footer className={styles.footer__container}>
             <div className={styles.footer__box}>
@@ -79,9 +87,9 @@ const FooterPage: React.FC = () => {
                     </div>
                 </div>
 
-                <nav className={styles.footer__box_navigation}>
+                <div className={styles.footer__link_box}>
                     {links.map((link, index) => (
-                        <div key={index} className={styles.footer__box_list}>
+                        <div key={index} className={styles.footer_list}>
                             <h4 className={styles.footer__list_h4}>{link.title}</h4>
                             <ul className={styles.footer__list_ul}>
                                 {link.items.map((item, index) => (
@@ -92,7 +100,21 @@ const FooterPage: React.FC = () => {
                             </ul>
                         </div>
                     ))}
-                </nav>
+                </div>
+            </div>
+            <div className={styles.footer_copyright_pay}>
+                <div className={styles.footer_copyright}>
+                    <p className={styles.copyright_p}>
+                        Shop.co © 2000-2023, All Rights Reserved
+                    </p>
+                </div>
+                <div className={styles.footer_pay}>
+                    <div className={styles.footer__pay_box}>
+                        {paymentMethods.map((method, index) => (
+                            <img key={index} src={method} alt="Payment Method" className={styles.footer__pay_icon} />
+                        ))}
+                    </div>
+                </div>
             </div>
         </footer>
     );

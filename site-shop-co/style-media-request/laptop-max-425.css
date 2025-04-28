@@ -1,3 +1,154 @@
 @media only screen and (max-width: 425px) {
-    
+    .main-container__site-shop-co {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header__shop-co {
+        width: 90%;
+    }
+
+    .header__logo__shop-co {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .header__logo__shop-co a {
+        font-weight: 800;
+    }
+
+    .header__search__shop-co {
+        display: none;
+    }
+
+    .header__account__shop-co {
+        width: 15%
+    }
+
+    .header__nav__shop-co {
+        display: none;
+    }
+
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-site {
+        height: auto;
+    }
+
+    .main-first-block {
+        width: 100%;
+    }
+
+    .main-first-block h1 {
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+
+    .first-block-description {
+        font-size: 0.8rem;
+    }
+
+    .btn-main-first-block {
+        width: 100%;
+    }
+
+    .statistics-number {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .statistics-name {
+        font-size: 0.7rem;
+        padding: 0;
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .main-second-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .brends-block-container {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .brends-block {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .brends-block-item {
+        height: 50px;
+    }
+
+    .new-arrivals__items-container, .top-selling__items-container {
+        flex-wrap: nowrap;
+        row-gap: 0;
+        column-gap: 20px;
+    }
+
+    .new-arrivals__item, .top-selling__item {
+        width: 160px;
+        height: 280px;
+    }
+
+    ._container_1acb1_1 {
+        align-items: flex-start;
+    }
+
+    ._container_4x5oj_1 {
+        height: 700px;
+    }
+
+    ._h3_4x5oj_25 {
+        width: 90%;
+        font-size: 1.8rem;
+    }
+
+    ._h3_1acb1_21 {
+        width: 60%;
+        font-size: 1.8rem;
+        margin-left: 30px;
+    }
+
+    ._dress__item_4x5oj_45 {
+        height: auto;
+    }
+
+    ._dress__item__one_line_4x5oj_85, ._dress__item__two_line_4x5oj_85 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ._dress__item__image__link_4x5oj_105, ._dress__item__image__link_responsive_4x5oj_125 {
+        width: 80%;
+        height: 60%;
+    }
+
+    ._dress__item__image__link__img_box_4x5oj_145 {
+        height: 120px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    ._footer__box_btw3y_29  {
+        flex-direction: column;
+    }
+
 }

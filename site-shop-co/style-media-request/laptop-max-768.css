@@ -1,3 +1,159 @@
 @media only screen and (max-width: 768px) {
     
+    .header__logo__shop-co {
+        margin-left: -20px;
+    }
+
+    .header__logo__shop-co a {
+        font-size: 1.5rem;
+    }
+
+    .header__nav__shop-co {
+        width: 40%;
+    }
+
+    .header__search__shop-co {
+        height: 80%;
+    }
+
+    .header__account__shop-co {
+        width: 7%;
+    }
+
+    ._dress__item__image__link_p_4x5oj_169 {
+        top: -15px;
+        left: 15px;
+        font-size: 22px;
+    }
+
+    ._dress__item__image__link__img_box_4x5oj_145 img {
+        border-radius: 20px;
+    }
+
+    .next-view__button--button {
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .new-arrivals__item, .top-selling__item {
+        height: 280px;
+    }
+
+    .new-arrivals__item_img-box, .top-selling__item_img-box {
+        height: 150px;
+    }
+
+    ._dress__item_4x5oj_45 {
+        justify-content: flex-start;
+        height: 350px;
+    }
+
+    ._dress__item__one_line_4x5oj_85, ._dress__item__two_line_4x5oj_85, ._dress__item__image__link_4x5oj_105 {
+        height: auto;
+    }
+
+    ._carusel__reviews_container_1acb1_35 {
+        width: 100%;
+    }
+
+    ._carousel_cvxr7_19 {
+        width: 150px !important;
+        height: 200px !important;
+        margin: 5px !important;
+    }
+
+    ._container_1acb1_1 {
+        height: auto;
+    }
+
+    ._reviewContent_cvxr7_79 {
+        gap: 0px;
+    }
+
+    ._stars_z1zly_1 {
+        font-size: 20px !important;
+    }
+
+    ._name_cvxr7_125 {
+        font-size: 0.8rem;
+    }
+
+    ._description_cvxr7_157 {
+        font-size: 0.7rem;
+    }
+
+    ._formSubscribe__input_aoijj_115 {
+        width: 60%;
+        height: auto;
+        font-size: 12px;
+    }
+
+    ._formSubscribe__form_aoijj_81 {
+        width: 100%;
+        margin-right: -50px;
+    }
+
+    ._formSubscribe__button_aoijj_137 {
+        width: 68%;
+        height: auto;
+        padding: 10px;
+        margin-right: -8px;
+        font-size: 12px;
+    }
+
+    ._footer__container_btw3y_1 {
+        margin-top: -150px;
+    }
+
+    ._footer__box_btw3y_29 {
+        height: 280px;
+    }
+
+    ._footer__logo_a_btw3y_85 {
+        font-size: 1.8rem;
+        margin-top: 20px;
+    }
+
+    ._footer__logo_text_btw3y_103 {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    ._social_media__box_btw3y_117 {
+        width: 90%;
+    }
+
+    ._footer_list_btw3y_175 {
+        width: 25%;
+    }
+
+    ._footer__link_box_btw3y_157  {
+        width: 80%;
+    }
+
+    ._footer__list_h4_btw3y_193 {
+        font-size: 0.8rem;
+    }
+
+    ._footer__list_ul_btw3y_209 {
+        margin-left: -20px;
+    }
+
+    ._footer__list_li_btw3y_237 {
+        font-size: 0.7rem;
+    }
+
+    ._footer_copyright_pay_btw3y_267 {
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    ._copyright_p_btw3y_305 {
+        font-size: 0.75rem;
+    }
+
+    ._footer__pay_icon_btw3y_349 {
+        width: 18%;
+    }
 }

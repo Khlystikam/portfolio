@@ -1,11 +1,42 @@
 @media only screen and (max-width: 1440px) {
     .main-container__site-shop-co {
-        width: 100%;
+        width: 90%;
         max-width: 1440px;
         margin: 0 auto;
     }
     
-    ._container_1acb1_1 {
-        width: 90%;
+    .new-arrivals__item, .top-selling__item {
+        justify-content: flex-start;
+        width: 20%;
+        height: 350px;
     }
+
+    .new-arrivals__item_img-box, .top-selling__item_img-box {
+        height: 280px;
+    }
+
+    .new-arrivals__item_img-box img , .top-selling__item_img-box img {
+        width: 80%;
+    }
+
+    .new-arrivals__items_name, .top-selling__items_name {
+        font-size: 0.9rem;
+    }
+
+    .new-arrivals__items_stars, .top-selling__items_stars {
+        font-size: 0.8rem;
+    }
+
+    .new-arrivals__items_price, .top-selling__items_price {
+        font-size: 0.9rem;
+    }
+
+    .new-arrivals__items_price--sale, .top-selling__items_price--sale {
+        font-size: 0.9rem;
+    }
+
+    .items_price-sale, .top-selling__items_price-sale {
+        font-size: 0.9rem;
+    }
+
 }
