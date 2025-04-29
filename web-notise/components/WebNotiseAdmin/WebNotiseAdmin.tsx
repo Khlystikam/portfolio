@@ -3,7 +3,10 @@ import { useNavigate } from 'react-router-dom';
 import AddNewNotise from '../handlers/AddNewNotise';
 import FileUploadForm from '../handlers/FileUploadForm';
 import UploadAnimationVideo from '../handlers/UploadAnimationVideo';
+
 import './WebNotiseAdmin.css';
+import '../../style-media-request/laptop-max-1440.css'
+import '../../style-media-request/laptop-max-1024.css'
 
 
 const WebNotiseAdmin = () => {
@@ -41,7 +44,7 @@ const WebNotiseAdmin = () => {
                 <button className="button-admin add-playlist-songs" onClick={ musicFileUpload }>Добавить/удалить музыку</button>
             </div>
             <div className="block-button-online">
-                <button className="button-admin" onClick={ handleRedirect }>Открыть объявления онлайн</button>
+                <button className="button-admin button-admin--blue" onClick={ handleRedirect }>Открыть объявления онлайн</button>
             </div>
         </div>
     )

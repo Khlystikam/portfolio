@@ -20,6 +20,16 @@
         width: 7%;
     }
 
+    .main-site {
+        width: calc(100vw - 20px);
+        margin-left: -2px;
+    }
+
+    .brends-block-container {
+        width: calc(100vw - 16px);
+        margin-left: -2px;
+    }
+
     ._dress__item__image__link_p_4x5oj_169 {
         top: -15px;
         left: 15px;
@@ -103,6 +113,7 @@
     }
 
     ._footer__container_btw3y_1 {
+        width: calc(100vw - 60px);
         margin-top: -150px;
     }
 

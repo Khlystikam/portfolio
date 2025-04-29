@@ -5,7 +5,7 @@ import AddNewNotise from './components/WebNotiseAdmin/WebNotiseAdmin';
 const Webnotise = () => {
     return (
         <div className="web-notise-box">
-            <h1>web объявления</h1>
+            <h1 className="web-notise-box__h1">web объявления</h1>
             <div className="web-notise-app">
                 < WebNotiseApp dataUrl="" />
             </div>

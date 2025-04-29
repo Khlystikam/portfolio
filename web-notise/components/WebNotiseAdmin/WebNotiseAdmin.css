@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     margin-bottom: 50px;
 }
@@ -23,10 +23,18 @@
 
 .button-admin:hover {
     background: #8a4680;
-    box-shadow: 5px 5px 5px 2px #aaa;
+    box-shadow: 3px 3px 5px 2px #aaa;
     transition: .5s;
 }
 
 .button-admin:active {
     background: #7e2070;
+}
+
+.button-admin--blue {
+    background: #466acc;
+}
+
+.button-admin--blue:hover {
+    background: #3557b6;
 }

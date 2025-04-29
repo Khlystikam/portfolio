@@ -88,15 +88,32 @@
         height: 50px;
     }
 
+    .new-arrivals__container, .top-selling__container {
+        width: 100vw;
+    }
+
     .new-arrivals__items-container, .top-selling__items-container {
         flex-wrap: nowrap;
         row-gap: 0;
         column-gap: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 350px;
+        width: 100%;
+        scrollbar-width: none;
     }
 
     .new-arrivals__item, .top-selling__item {
         width: 160px;
         height: 280px;
+    }
+
+    .new-arrivals__item:first-child, .top-selling__item:first-child {
+        margin-left: 20px;
+    }
+
+    .new-arrivals__item:last-child, .top-selling__item:last-child {
+        margin-right: 20px;
     }
 
     ._container_1acb1_1 {
@@ -136,19 +153,105 @@
         height: 120px;
     }
 
+    ._formSubscribeBottom__content_aoijj_1 {
+        height: auto;
+        width: 95%;
+        margin: 30px 0;
+        margin-left: -20px;
+    }
 
+    ._formSubscribe__box_aoijj_25 {
+        justify-content: center;
+    }
 
+    ._formSubscribe__text_aoijj_49 {
+        width: 40%;
+    }
 
+    ._formSubscribe__form_box_aoijj_81 {
+        width: 50%;
+    }
 
+    ._formSubscribe__text_p_aoijj_67 {
+        font-size: 0.9rem;
+    }
 
+    ._formSubscribe__input_aoijj_115  {
+        width: 80%;
+    }
 
+    ._formSubscribe__form_aoijj_81 {
+        margin-right: 0;
+    }
 
+    ._formSubscribe__button_aoijj_137 {
+        width: 100%;
+        margin-right: 0;
+    }
 
-
-
+    ._footer__container_btw3y_1 {
+        width: 100%;
+        height: 600px;
+        padding: 0;
+        margin-top: -80px;
+    }
 
     ._footer__box_btw3y_29  {
         flex-direction: column;
+        height: auto;
+        margin-left: -20px;
+    }
+
+    ._logo_social__box_btw3y_51 {
+        width: 100%;
+    }
+
+    ._footer__logo_text_btw3y_103 {
+        margin-bottom: 20px;
+    }
+
+    ._social_media__box_btw3y_117 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    ._footer__link_box_btw3y_157 {
+        width: 100%;
+        height: 200px;
+    }
+
+    ._footer__list_h4_btw3y_193 {
+        font-size: 0.7rem;
+    }
+
+    ._footer__list_li_btw3y_237 {
+        font-size: 0.6rem;
+    }
+    
+    ._footer_copyright_pay_btw3y_267 {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    ._footer_copyright_btw3y_267 {
+        width: 40%;
+    }
+
+    ._copyright_p_btw3y_305 {
+        font-size: 0.7rem;
+        line-height: 1.8;
+    }
+
+    ._footer_pay_btw3y_317 {
+        width: 50%;
+    }
+
+    ._footer__pay_box_btw3y_335 {
+        flex-wrap: wrap;
+    }
+
+    ._footer__pay_icon_btw3y_349 {
+        width: 30%;
     }
 
 }
