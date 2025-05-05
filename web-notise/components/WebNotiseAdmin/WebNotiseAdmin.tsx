@@ -5,8 +5,10 @@ import FileUploadForm from '../handlers/FileUploadForm';
 import UploadAnimationVideo from '../handlers/UploadAnimationVideo';
 
 import './WebNotiseAdmin.css';
-import '../../style-media-request/laptop-max-1440.css'
-import '../../style-media-request/laptop-max-1024.css'
+import '../../style-media-request/laptop-max-1440.css';
+import '../../style-media-request/laptop-max-1024.css';
+import '../../style-media-request/table-max-768.css';
+import '../../style-media-request/mobile-max-425.css';
 
 
 const WebNotiseAdmin = () => {

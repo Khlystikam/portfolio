@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './main-text-powerpoint.css';
+import './style/table-max-768.css';
+import './style/mobile-max-425.css';
+
 
 const MainTextPowerpoint: React.FC = () => {
     const [files, setFiles] = useState<File[]>([]);
