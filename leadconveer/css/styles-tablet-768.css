@@ -1,0 +1,176 @@
+@media only screen and (max-width: 768px) {
+
+    .header__logo {
+        width: 20%;
+    }
+
+    .nav__link {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .burger-nav__icon {
+        width: 60%;
+    }
+
+    .section-main {
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    .content-title {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .main__content-text {
+        height: 40%;
+    }
+
+    .content-text__text {
+        font-size: 1rem;
+    }
+
+    .content-text__img {
+        font-size: 30px;
+    }
+
+    .main__button-btn {
+        font-size: 0.7rem;
+    }
+
+    .section-advantages {
+        margin-bottom: 60px;
+    }
+
+    .advantages__top {
+        margin-top: -80px;
+        margin-bottom: 40px;
+    }
+
+    .advantages__top__item {
+        width: 120px;
+        font-size: 0.6rem;
+    }
+
+    .advantages__matrix-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .advantages__bottom__title-block {
+        font-size: 1.7rem;
+    }
+
+    .matrix-item__text {
+        width: 90%;
+        padding-left: 20px;
+        margin-top: 50px;
+    }
+
+    .matrix-item__description-text {
+        font-size: 0.8rem;
+    }
+
+    .advantages__img-container {
+        width: 100%;
+    }
+
+    .cost-leads__box {
+        margin-bottom: 60px;
+    }
+
+    .cost-leads__h3-box {
+        margin-bottom: 50px;
+    }
+
+    .cost-leads__title-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .cost-leads--h3 {
+        font-size: 1rem;
+    }
+
+    .prices-plan--box {
+        height: auto;
+    }
+
+    .prices-plan__item {
+        height: 550px;
+        padding: 20px;
+    }
+
+    .prices-plan__title--h3 {
+        font-size: 1rem;
+    }
+
+    .prices-plan__thesis-box {
+        font-size: 1rem;
+    }
+
+    .prices-plan__thesis-point-box {
+        margin-top: 0;
+    }
+
+    .prices-plan__thesis-point--ul {
+        gap: 5px;
+    }
+
+    .prices-plan__thesis-description {
+        font-size: 0.8rem;
+    }
+
+    .prices-plan__thesis-point--ul--li {
+        font-size: 0.8rem;
+    }
+
+    .prices-plan__btn {
+        width: 60%;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .additional-services__title--h2{
+        font-size: 1.5rem;
+    }
+
+    .additional-services__text--p-1 {
+        font-size: 1rem;
+    }
+
+    .additional-services__text__p-block--p-1, .additional-services__text__p-block--p-2 {
+        font-size: 1.3rem;
+    }
+
+    .additional-services__btn {
+        width: 40%;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .clients__text__title h2 {
+        font-size: 1.5rem;
+    }
+
+    .clients__text-p {
+        font-size: 0.9rem;
+    }
+
+    .clients__card-img--item {
+        width: 25%;
+        max-width: 300px;
+        height: 120px;
+    }
+
+}

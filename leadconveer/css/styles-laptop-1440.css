@@ -1,0 +1,161 @@
+@media only screen and (max-width: 1440px) {
+    .header__logo-link {
+        width: 150px;
+    }
+    
+    .header__logo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+    }
+
+    .communication__img {
+        width: 30px;
+    }
+
+    .communication__link_tel {
+        font-size: 1.2rem;
+    }
+
+    .main {
+        width: 95%;
+    }
+
+    .content-title {
+        font-size: 4rem;
+        line-height: 60px;
+    }
+
+    .content-text__text {
+        font-size: 1.4rem;
+    }
+
+    .content-text__img {
+        width: 50px;
+    }
+
+    .main__button {
+        width: 40%;
+        height: 60px;
+    }
+
+    .main__button-btn {
+        font-size: 1rem;
+    }
+
+    .main__img-container {
+        width: 45%;
+    }
+
+    .main__img-container__img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .advantages__top__item {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    .advantages__bottom__title-block {
+        font-size: 2rem;
+    }
+
+    .matrix-item__text-title-h3 {
+        font-size: 1.5rem;
+    }
+
+    .matrix-item__description-text {
+        font-size: 1.2rem;
+    }
+
+    .advantages__img-container-item {
+        width: 250px;
+    }
+
+    .cost-leads__title-box h2 {
+        font-size: 2rem;
+    }
+
+    .cost-leads--h3 {
+        font-size: 1.3rem;
+    }
+
+    .prices-plan__item {
+        width: 25%;
+    }
+
+    .prices-plan__title--h3 {
+        font-size: 1.5rem;
+    }
+
+    .prices-plan__thesis-box {
+        font-size: 1.5rem;
+    }
+
+    .prices-plan__thesis-description {
+        font-size: 1.2rem;
+    }
+
+    .prices-plan__thesis-point--ul--li {
+        font-size: 1.2rem;
+    }
+
+    .prices-plan__btn {
+        width: 80%;
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
+    .additional-services__card-item {
+        height: 200px;
+    }
+
+    .additional-services__title--h2 {
+        font-size: 2rem;
+    }
+
+    .additional-services__text--p-1 {
+        font-size: 1.5rem;
+    }
+
+    .additional-services__text__p-block--p-1, .additional-services__text__p-block--p-2 {
+        font-size: 1.6rem;
+    }
+
+    .additional-services__button-box {
+        justify-content: center;
+    }
+
+    .additional-services__btn {
+        width: 50%;
+        height: 60px;
+        font-size: 1.2rem;
+    }
+
+    .clients__text__title h2 {
+        font-size: 2rem;
+    }
+
+    .clients__text-p {
+        font-size: 1.3rem;
+    }
+
+    .clients__card-img--item {
+        width: 25%;
+        max-width: 350px;
+        height: 150px;
+    }
+    
+
+
+
+
+
+
+
+
+}

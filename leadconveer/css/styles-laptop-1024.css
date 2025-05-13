@@ -1,0 +1,213 @@
+@media only screen and (max-width: 1024px) {
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .header__logo {
+        width: 15%;
+    }
+
+    .burgermenu__container-icon {
+        display: flex;
+    }
+
+    .btn__burger {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        background: #00000000;
+    }
+
+    .burger-nav__icon {
+        width: 65%;
+        height: auto;
+        transition: 0.3s;
+    }
+
+    .burger-nav__icon:hover {
+        width: 70%;
+        transition: 0.3s;
+    }
+
+    .burger-nav__icon--open {
+        display: flex;
+    }
+
+    .burger-nav__icon--close {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        width: 100vw;
+        height: 1800px;
+        background-color: #2f2f2f;
+        overflow: hidden;
+    }
+
+    .nav__ui {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 300px;
+        gap: 25px;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .communication {
+        width: 70%;
+    }
+
+    .communication__link_tel {
+        font-size: 1rem;
+    }
+
+    .section-main {
+        height: 500px;
+        margin-bottom: 60px;
+    }
+
+    .main {
+        margin-top: 0;
+    }
+
+    .main__content {
+        width: 60%;
+    }
+
+    .main__img-container {
+        width: 40%;
+    }
+
+    .content-title {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
+    .content-text__text {
+        font-size: 1.2rem;
+    }
+
+    .content-text__img {
+        width: 40px;
+    }
+
+    .main__button {
+        width: 40%;
+        height: 50px;
+    }
+
+    .main__button-btn {
+        font-size: 0.8rem;
+    }
+
+    .advantages__top {
+        margin-top: -100px;
+        margin-bottom: 60px;
+    }
+
+    .advantages__top__item {
+        width: 140px;
+        font-size: 0.7rem;
+    }
+
+    .matrix-item__text {
+        width: 65%;
+    }
+
+    .matrix-item__text-title-h3 {
+        font-size: 1.2rem;
+    }
+
+    .matrix-item__description-text {
+        font-size: 1rem;
+    }
+
+    .advantages__img-container-item {
+        width: 150px;
+    }
+
+    .cost-leads__title-box {
+        margin-bottom: 30px;
+    }
+
+    .cost-leads__title-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .cost-leads--h3 {
+        font-size: 1.2rem;
+    }
+
+    .prices-plan--box {
+        width: 105%;
+    }
+
+    .prices-plan__title--h3 {
+        font-size: 1.2rem;
+    }
+
+    .prices-plan__title--img {
+        width: 30px;
+        height: auto;
+    }
+
+    .prices-plan__thesis-box {
+        font-size: 1.2rem;
+    }
+
+    .prices-plan__thesis-description {
+        font-size: 1.1rem;
+    }
+
+    .prices-plan__thesis-point--ul--li {
+        font-size: 1rem;
+    }
+
+    .prices-plan__btn {
+        width: 70%;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .additional-services__title--h2 {
+        font-size: 1.7rem;
+    }
+
+    .additional-services__text--p-1 {
+        font-size: 1.2rem;
+    }
+
+    .additional-services__text--img__box {
+        width: 40px;
+        height: auto;
+    }
+
+    .additional-services__text__p-block--p-1, .additional-services__text__p-block--p-1 {
+        font-size: 1.3rem;
+    }
+
+    .additional-services__btn {
+        width: 40%;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .clients__text__title h2 {
+        font-size: 1.7rem;
+    }
+
+    .clients__text-p {
+        font-size: 1rem;
+    }
+
+}

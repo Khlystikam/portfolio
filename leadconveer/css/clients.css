@@ -39,7 +39,7 @@
     color: var(--color-orange-juice);
 }
 
-.clients__text__p {
+.clients__text {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,7 +47,7 @@
     width: 35%;
 }
 
-.clients__text__p--p {
+.clients__text-p {
     font-size: 32px;
     font-weight: 400;
     text-align: center;

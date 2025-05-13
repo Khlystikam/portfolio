@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/additional-services.css">
     <link rel="stylesheet" href="css/clients.css">
 
+    <link rel="stylesheet" href="css/styles-laptop-1440.css">
+    <link rel="stylesheet" href="css/styles-laptop-1024.css">
+    <link rel="stylesheet" href="css/styles-tablet-768.css">
+    <link rel="stylesheet" href="css/styles-mobile-425.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -31,22 +36,22 @@
                 <nav class="nav">
                     <ul class="nav__ui">
                         <li class="nav__item">
-                            <a class="nav__link" href="">
+                            <a class="nav__link" href="#scroll-to-work">
                                 Как это работает
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="">
+                            <a class="nav__link" href="#scroll-to-price">
                                 Цена
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="">
+                            <a class="nav__link" href="#scroll-to-reviews">
                                 Отзывы
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="">
+                            <a class="nav__link" href="#scroll-to-contacts">
                                 Контакты
                             </a>
                         </li>
@@ -63,6 +68,13 @@
                     <a class="communication__link communication__link_tel" href="tel:+7999999999">
                         +7 999 999-99-99
                     </a>
+                </div>
+
+                <div class="burgermenu__container-icon">
+                    <button class="btn__burger" onclick="toggleImgBurgerMenu()">
+                        <img src="assets/img/burger-menu/burger-open.webp" alt="burger menu open" class="burger-nav__icon burger-nav__icon--open">
+                        <img src="assets/img/burger-menu/burger-close.webp" alt="burger menu close" class="burger-nav__icon burger-nav__icon--close">
+                    </button>
                 </div>
             </header>
         </section>
@@ -99,7 +111,7 @@
             </main>
         </section>
 
-        <section class="section-advantages">
+        <section class="section-advantages" id="scroll-to-work">
             <div class="advantages__top">
                 <div class="advantages__top__item">
                     Лидогенерация в b2b
@@ -221,7 +233,7 @@
             </div>
         </section>
 
-        <div class="cost-leads__box">
+        <div class="cost-leads__box" id="scroll-to-price">
             <div class="cost-leads__title-box">
                 <h2 class="cost-leads__title--h2-1">
                     Стоимость технологий
@@ -436,8 +448,8 @@
                         Лидов для своего бизнеса
                     </h2>
                 </div>
-                <div class="clients__text__p">
-                    <div class="clients__text__p--p">
+                <div class="clients__text">
+                    <div class="clients__text-p">
                         Более 5000 компаний по всей России уже используют покупку Лидов!
                     </div>
                 </div>
@@ -459,4 +471,7 @@
         </div>
 
     </body>
+
+    <script src="./js/burgerMenu.js"></script>
+    <script src="./js/caruselAdvantagesMobil.js"></script>
 </html>
