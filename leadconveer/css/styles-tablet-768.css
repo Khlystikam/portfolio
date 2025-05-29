@@ -173,4 +173,66 @@
         height: 120px;
     }
 
+    .new-era__box {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .new-era__slogan-box {
+        align-items: center;
+        width: 100%;
+    }
+
+    .slogan-box__text-h3 {
+        text-align: center;
+    }
+
+    .new-era__discription-box {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .discription-box__btn {
+        margin: 0 auto;
+    }
+
+    .contacts_box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        padding: 20px;
+    }
+
+    .contacts__left-box {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact__text {
+        margin-bottom: 40px;
+    }
+
+    .contacts__right-box {
+        width: 70%;
+    }
+
+    .right-box__img {
+        width: 100%;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    .footer-text__copyright {
+        font-size: 0.9rem;
+    }
+
+    .footer-text__data-company {
+        font-size: 0.7rem;
+    }
+
 }

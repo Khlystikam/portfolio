@@ -150,12 +150,66 @@
         height: 150px;
     }
     
+    .discription-box__p {
+        font-size: 1.3rem;
+    }
 
+    .new-era__box {
+        align-items: flex-start;
+    }
 
+    .new-era__slogan-box {
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 80%;
+        gap: 50px;
+    }
 
+    .slogan-box__text-h3 {
+        width: 100%;
+        font-size: 2rem;
+    }
 
+    .slogan-box__button {
+        width: 60%;
+        font-size: 1.2rem;
+    }
 
+    .contact__name-box {
+        font-size: 2rem;
+    }
 
+    .contact__text {
+        font-size: 1.3rem;
+    }
 
+    .contacts-address__name {
+        font-size: 1.3rem;
+    }
+
+    .contacts-address__value {
+        font-size: 1.3rem;
+    }
+
+    .contacts__right-box {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-box__img {
+        width: 90%;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .footer-text__copyright {
+        font-size: 1.2rem;
+    }
+
+    .footer-text__data-company {
+        font-size: 1rem;
+    }
 
 }

@@ -210,4 +210,79 @@
         font-size: 1rem;
     }
 
+    .new-era__box {
+        height: 250px;
+    }
+
+    .new-era__slogan-box {
+        height: auto;
+    }
+
+    .slogan-box__text-h3 {
+        font-size: 1.7rem;
+    }
+
+    .slogan-box__img-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slogan-box__button {
+        width: 60%;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .new-era__discription-box {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 80%;
+        gap: 5px;
+    }
+
+    .discription-box__p {
+        font-size: 1rem;
+    }
+
+    .discription-box__btn {
+        font-size: 1.2rem;
+    }
+
+    .contacts__left-box {
+        gap: 20px;
+    }
+
+    .contact__name-box {
+        font-size: 1.5rem;
+    }
+
+    .contact__text {
+        font-size: 1rem;
+    }
+
+    .contacts-address__name {
+        font-size: 0.9rem;
+    }
+
+    .contacts-address__value {
+        font-size: 0.9rem;
+    }
+
+    .right-box__img {
+        width: 80%;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    .footer-text__copyright {
+        font-size: 1rem;
+    }
+
+    .footer-text__data-company {
+        font-size: 0.8rem;
+    }
+
 }

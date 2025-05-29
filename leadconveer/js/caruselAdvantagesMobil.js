@@ -1,5 +1,5 @@
 const caruselAdvantages = () => {
-    if (window.innerWidth <= 425) {
+    if (window.innerWidth <= 450) {
         const advantagesItems = document.querySelectorAll(".advantages__matrix-item");
         const track = document.querySelector(".advantages__matrix");
 
@@ -14,6 +14,8 @@ const caruselAdvantages = () => {
 
             advantagesItems[currentIndex].style.display = "flex";
         }
+
+        itemCarousel();
 
         // Фиксируем свайп
         track.addEventListener("touchstart", (e) => {
@@ -37,7 +39,6 @@ const caruselAdvantages = () => {
         });
 
         itemCarousel();
-        console.log(currentIndex);
     }
 }
 

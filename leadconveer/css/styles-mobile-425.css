@@ -24,11 +24,17 @@
 
     .main__content {
         width: 100%;
-        margin-bottom: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .main__content-text {
+        flex-direction: column;
     }
 
     .main__img-container {
-        width: 60%;
+        width: 90%;
     }
 
     .content-title {
@@ -45,8 +51,9 @@
     }
 
     .main__button {
-        width: 35%;
+        width: 75%;
         height: 40px;
+        margin: 0 auto;
     }
 
     .main__button-btn {
@@ -61,6 +68,7 @@
         height: auto;
         flex-wrap: wrap;
         margin-top: -65px;
+        justify-content: space-around;
         gap: 10px;
     }
 
@@ -73,10 +81,133 @@
 
     .advantages__bottom__title-block {
         font-size: 1.3rem;
+        text-align: center;
+        gap: 20px;
     }
 
     .advantages__matrix-item {
         display: none;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .cost-leads__box {
+        display: none;
+    }
+
+    .cost-additional-services__box {
+        display: none;
+    }
+
+    .additional-services__box {
+        margin-bottom: 50px;
+    }
+
+    .additional-services__card-box {
+        flex-direction: column;
+    }
+
+    .additional-services__card-item {
+        width: 80%;
+    }
+
+    .additional-services__btn {
+        width: 80%;
+    }
+
+    .clients__box {
+        margin-bottom: 50px;
+    }
+
+    .clients__text-box {
+        text-align: center;
+    }
+
+    .clients__text__title {
+        gap: 20px;
+    }
+
+    .clients__text__title h2 {
+        font-size: 1.4rem;
+    }
+
+    .clients__text {
+        width: 100%;
+    }
+
+    .clients__card-img__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .clients__card-img--item {
+        width: 150px;
+        height: 100px;
+    }
+
+    .new-era__slogan-box {
+        gap: 30px;
+    }
+
+    .slogan-box__text-h3 {
+        font-size: 1.4rem;
+    }
+
+    .slogan-box__img-box {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slogan-box__button {
+        font-size: 0.8rem;
+    }
+
+    .new-era__discription-box {
+        text-align: center;
+    }
+
+    .contacts_box {
+        width: 85%;
+    }
+
+    .contacts__left-box {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .contact__text {
+        margin-bottom: 20px;
+    }
+
+    .contacts__right-box {
+        width: 100%;
+    }
+
+    footer {
+        height: 120px;
+    }
+
+    .footer-text {
+        width: 90%;
+    }
+
+    .footer-text__copyright {
+        font-size: 0.8rem;
+    }
+
+    .footer-text__data-company {
+        font-size: 0.7rem;
+    }
 }
